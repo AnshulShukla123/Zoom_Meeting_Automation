@@ -1,0 +1,37 @@
+                                                                                         - - #  R E G U M A T E  # - -
+
+
+TUTORIAL FOR ZOOM MEETING AUTOMATION :
+
+1- install zoom application in your laptop/desktop using link https://zoom.us/download 
+2- Do the audio and video settings according to given imgages 1)- zoom_audio.png   2)- zoom_video.png
+3- install all python libraries in terminal :
+ 
+ •  pip install pyautogui
+ •  pip install schedule
+ •  pip install opencv-python
+ •  pip install mysql-connector-python
+ •  pip install numpy
+ •  pip install subprocess
+ •  pip install time
+ 
+4- Make sure jdbc (.jar file ) is downloaded and path is set on classpath. 
+5- Make sure java (jdk) is installed and path is set.
+6- There are two paths of image in main.py make sure both paths are update according to your computer.
+7- make sure database name is regumate and user is root and password is according to your mysql password.
+8- In mysql portion you have toi create a database using command 
+ 
+ •  CREATE DATABASE regumate;  
+ •  CREATE TABLE meetings (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    meeting_id VARCHAR(255) NOT NULL,
+    passcode VARCHAR(255) NOT NULL,
+    meeting_time VARCHAR(255),
+    total_meeting INT
+    );
+ 
+9- command to run the file - nohup ./run.sh > output.log 2>&1 &
+
+                                                                                          
+                                                                                         
+                                                                                           - - #  R E G U M A T E  # - -
