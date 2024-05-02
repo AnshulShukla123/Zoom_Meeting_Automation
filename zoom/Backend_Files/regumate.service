@@ -1,0 +1,17 @@
+[Unit]
+Description=Regumate Daemon Service
+After=network.target
+
+[Service]
+User=alex
+Group=alex
+WorkingDirectory=/home/alex/Desktop/zoom/Backend_Files
+ExecStart=/bin/bash -c "startx & sleep 5 && export DISPLAY=:0 && /usr/bin/python3 /home/alex/Desktop/zoom/Backend_Files/regumate.py"
+Restart=always
+Environment=DISPLAY=:0
+StandardOutput=file:/home/alex/Desktop/zoom/Backend_Files/Logs/main.logs
+StandardError=file:/home/alex/Desktop/zoom/Backend_Files/Logs/main.logs
+
+[Install]
+WantedBy=multi-user.target
+

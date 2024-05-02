@@ -1,0 +1,4 @@
+2024-04-10 22:56:22.335794 - meetidimage image not found on the screen after joining.
+2024-04-15 13:09:32.112125 - Join image not found on the screen.
+2024-04-16 22:56:31.452908 - Join image not found on the screen.
+2024-04-20 22:56:24.882942 - Join image not found on the screen.
